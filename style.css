@@ -1,0 +1,19 @@
+h1 {
+	text-align: center;
+}
+.tabel {
+	top: 99px;
+	height: 100px;
+	weight: 1800px;
+	left: 100px;
+	border: 3px solid black;
+	background: red;
+}
+.head {
+	top: 99px;
+    left: 18px;
+    weight: 1800px;
+    height: 187px; 
+    background: red;
+
+}
