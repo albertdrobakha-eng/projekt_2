@@ -7,7 +7,7 @@ h1 {
 }
 .tabel {
 	
-	height: 590px;
+	height: 690px;
 	width: 800px;
 	margin: 50px;
 	position: fixed;
@@ -17,15 +17,24 @@ h1 {
 	border: 3px solid black;
 	background: burlywood;
 }
-.head {
-    top: 40px;
-    width: 300px;
-    height: 60px; 
-    background: rosybrown;
 
-}
 .tbody {
 	height: 120px;
-	margin-top: -250px;
+
 	background: rosybrown;
+}
+#messageList {
+	height: 500px;
+	background: white;
+	margin-top: 20px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+
+}
+
+.input-area {
+	margin-top: -70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
