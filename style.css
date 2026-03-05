@@ -1,19 +1,31 @@
+body {
+	background: bisque;
+}
+
 h1 {
 	text-align: center;
 }
 .tabel {
-	top: 99px;
-	height: 100px;
-	weight: 1800px;
-	left: 100px;
+	
+	height: 590px;
+	width: 800px;
+	margin: 50px;
+	position: fixed;
+	top: 50%;
+	left: 45%;
+	transform: translate(-50%, -50%);
 	border: 3px solid black;
-	background: red;
+	background: burlywood;
 }
 .head {
-	top: 99px;
-    left: 18px;
-    weight: 1800px;
-    height: 187px; 
-    background: red;
+    top: 40px;
+    width: 300px;
+    height: 60px; 
+    background: rosybrown;
 
+}
+.tbody {
+	height: 120px;
+	margin-top: -250px;
+	background: rosybrown;
 }
