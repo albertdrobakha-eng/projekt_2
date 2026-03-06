@@ -8,7 +8,7 @@ console.log("hello world")
  async function getMessages() {
  	const messageData = { text: 'Hello!' };
 
- 	const response = await fetch('script.js', {
+ 	const response = await fetch('http://tinkr.tech/sdb/projekt_2', {
  		method: 'POST',
  		headers: {
  			'Content-Type': 'application/json'
@@ -18,4 +18,5 @@ console.log("hello world")
  	const result = await response.json();
  	
  }
+ 
 
