@@ -3,10 +3,10 @@ const messageInput = document.querySelector('#messageInput');
 const sendBtn = document.querySelector('#sendBtn');
 const messageList = document.querySelector('#messageList');
 
-const deleteAllBtn = document.querySelector('#deleteAllBtn');
+const url = 'https://tinkr.tech/sdb/xcv'
 
 async function getMessages() {
-  const response = await fetch('https://tinkr.tech/sdb/projekt_2');
+  const response = await fetch(url);
   const messages = await response.json();
 
   messageList.innerHTML = '';
@@ -19,14 +19,11 @@ async function getMessages() {
 }
 
 
-
 async function sendMessage() {
 
   const text = messageInput.value;
-
   const messageData = {text: text};
-
-  const response = await fetch('https://tinkr.tech/sdb/projekt_2', {
+  const response = await fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -45,17 +42,21 @@ getMessages();
 
 
 
-async function deleteAllMessages() {
-  const response = await fetch('https://tinkr.tech/sdb/projekt_2');
-  const messages = await response.json();
 
-  for (let msg of messages) {
-    await fetch(`https://tinkr.tech/sdb/projekt_2/${msg.id}`, {
-      method: 'DELETE'
-    });
-  }
 
-  getMessages();
-}
 
-deleteAllBtn.addEventListener('click', deleteAllMessages);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
